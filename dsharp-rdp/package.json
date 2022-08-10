@@ -1,0 +1,26 @@
+{
+  "name": "dsharp-rdp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Parser.js",
+  "scripts": {
+    "test": "node ./__tests__/run.js && exit 0",
+    "watch": "npm-watch"
+  },
+  "watch": {
+    "test": {
+      "patterns": [
+        "**/*.js"
+      ],
+      "extensions": "js,jsx",
+      "quiet": true,
+      "delay": 2500,
+      "runOnChangeOnly": false
+    }
+  },
+  "author": "Daniel Serrano",
+  "license": "ISC",
+  "dependencies": {
+    "npm-watch": "^0.11.0"
+  }
+}

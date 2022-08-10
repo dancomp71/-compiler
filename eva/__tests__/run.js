@@ -19,4 +19,12 @@ const eva = new Eva(new Environment({
 
 tests.forEach(test => test(eva));
 
+testUtil.test(`
+    (begin
+        (var x 10)
+        (var y 20)
+        (+ (* x 10) y)    
+    )
+`, 120);
+
 console.log('All assertions passed!');

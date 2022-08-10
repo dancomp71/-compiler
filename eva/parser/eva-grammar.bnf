@@ -1,0 +1,33 @@
+// ----------
+// LEX BLOCK
+
+%lex
+
+%%
+
+\s+ /* skip whitespace */
+
+\"[^\"]*\" return 'STRING'
+\d+ return 'NUMBER'
+[\w\-+*=<>/] return 'SYMBOL'
+
+/lex
+/* end lex */
+
+
+// ---------
+// Syntax
+
+%%
+
+Exp
+    : Atom
+    | List
+    ;
+
+Atom
+    : NUMBER
+    | STRING
+    | SYMBOL
+    ;
+

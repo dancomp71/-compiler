@@ -1,0 +1,20 @@
+{
+    type: "BinaryExpression",
+    operator: "+",
+    left: {
+        type: "NumericLiteral",
+        value: 7
+    },
+    right: {
+        type: "BinaryExpression",
+        operator: "*",
+        left: {
+            type: "NumericLiteral",
+            value: 3
+        },
+        right: {
+            type: "NumericLiteral",
+            value: 4
+        }
+    }
+}

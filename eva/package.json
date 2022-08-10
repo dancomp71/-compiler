@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "assert": "^2.0.0"
+    "assert": "^2.0.0",
+    "syntax-cli": "^0.1.26"
   }
 }
